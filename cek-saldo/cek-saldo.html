@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldo Akun</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="cek-saldo.css">
+</head>
+<body>
+  <main class="main-cek-saldo">
+    <nav class="navbar">
+      <div class="container">
+        <span class="bank-name">(NAMA BANK)</span>
+        <span class="date">Rabu 23 Oktober</span>
+      </div>
+    </nav>
+    <div class="container-main">
+      <h1>Saldo Akun Anda</h1>
+      <p class="balance">Rp 1.050.000</p>
+      <a href="../main-page/main-page.html" class="continue continue-link">
+         Lanjut Transaksi
+       </a> 
+       <div class="exit exit-link" data-bs-toggle="modal" data-bs-target="#keluarBank">
+         Keluar
+       </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="keluarBank">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="../img/icons-logout.png" class="icon-logout">
+            <h5 class="modal-title">Apakah anda ingin keluar dari mini ATM?</h5>
+            <a href="../thank-you-page/thank-you.html">
+              <button type="button" class="btn button-out" data-bs-toggle="modal" data-bs-target="#loadingModal">Keluar</button>
+            </a>
+            <button type="button" class="btn button-no">Tidak</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

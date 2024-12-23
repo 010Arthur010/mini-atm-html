@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Transfer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="transfer.css" />
+  </head>
+  <body>
+    <div class="transfer">
+      <nav class="navbar">
+        <div class="bank-name">(NAMA BANK)</div>
+        <div class="date">Rabu 23 Oktober</div>
+      </nav>
+      <main class="container">
+        <h2 class="text1">Pastikan mengisi dengan</h2>
+        <h2 class="text2">
+          <span class="highlight">benar</span>
+          !!
+        </h2>
+        <label>Kode Bank dan No Rekening</label>
+        <input type="text" id="inputNumber" placeholder="masukan kode bank dan no rekening" />
+        <div class="btn-group">
+          <button
+            class="button button-next"
+            data-bs-toggle="modal"
+            data-bs-target="#transferBank"
+          >
+            Selanjutnya
+          </button>
+          <button class="button button-exit">Menu Lainnya</button>
+        </div>
+      </main>
+    </div>
+
+    <div class="modal" tabindex="-1" id="transferBank">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center pb-0">
+            <h5 class="modal-title text-center pb-3">Apakah data penerima sudah benar?</h5>
+          </div>
+          <div class="modal-body mb-2">
+            <form>
+              <div class="form-group">
+                  <label for="input1" class="small-label">No Rekening dan Kode Bank</label>
+                  <input type="text" class="form-control" id="input1" placeholder="Masukkan input pertama">
+              </div>
+              <div class="form-group">
+                  <label for="input2" class="small-label">Nama Penerima</label>
+                  <input type="text" class="form-control" id="input2" placeholder="Masukkan input kedua">
+              </div>
+          </form>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <a href="../nominal-transfer/nominal-transfer.html">
+              <button
+              type="button"
+              class="btn custom-1"
+              data-bs-dismiss="modal">
+              Lanjut
+            </button>
+          </a>
+            <button type="button" class="btn custom-2">Kembali</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../transfer/script.js"></script>
+  </body>
+</html>

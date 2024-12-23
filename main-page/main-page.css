@@ -1,0 +1,255 @@
+/* Mencegah scroll di halaman */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif; /* Use Poppins font */
+  background-color: #2196f3;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  border-bottom: #fff solid 1px;
+  margin-bottom: 55px;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.navbar-text {
+  font-size: 1.2rem;
+  color: #DEDEDE;
+  opacity: 55%;
+}
+
+.text-center a {
+  text-decoration: none;
+}
+
+.illustration {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  border: none;
+  text-decoration: none;
+}
+
+span {
+  border: none;
+}
+
+.illustration .img-fluid {
+  width: 500px;
+  height: 450px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.action-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  height: 80px;
+  width: 350px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.action {
+  width: 40px; /* Ubah sesuai kebutuhan */
+  height: auto; /* Menjaga rasio aspek */
+  margin-right: 10px;
+}
+
+.action-button:focus {
+  outline: none;
+}
+
+.action-button:hover {
+  background-color: #88aaff;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+}
+
+.action-button:hover .icon-eye {
+  width: 40px; /* Ubah sesuai kebutuhan */
+  height: auto; /* Menjaga rasio aspek */
+  margin-right: 10px;
+  content: url('../img/eye-2.png'); /* Gambar baru */
+}
+
+.action-button:hover .icon-trans {
+  width: 40px; /* Ubah sesuai kebutuhan */
+  height: auto; /* Menjaga rasio aspek */
+  margin-right: 10px;
+  content: url('../img/trans-2.png'); /* Gambar baru */
+}
+
+.action-button:hover .icon-money {
+  width: 40px; /* Ubah sesuai kebutuhan */
+  height: auto; /* Menjaga rasio aspek */
+  margin-right: 10px;
+  content: url('../img/money-2.png'); /* Gambar baru */
+}
+
+.action-button:hover .icon-tarik {
+  width: 40px; /* Ubah sesuai kebutuhan */
+  height: auto; /* Menjaga rasio aspek */
+  margin-right: 10px;
+  content: url('../img/tarik-2.png'); /* Gambar baru */
+}
+
+.action-button:hover .icon-keluar {
+  width: 40px; /* Ubah sesuai kebutuhan */
+  height: auto; /* Menjaga rasio aspek */
+  margin-right: 10px;
+  content: url('../img/keluar-2.png'); /* Gambar baru */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-red {
+  background: #e63946;
+  color: white;
+}
+
+.button-white {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+img {
+  width: 148px;
+  height: 148px;
+}
+
+/* Popup Keluar */
+
+.modal-dialog {
+  max-width: 350px;
+  margin: auto;
+  margin-top: 125px;
+}
+
+.modal-content {
+ border-radius: 25px;
+
+}
+.modal-header {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ border-bottom: none;
+}
+ .icon-logout {
+  margin-top: 20px;
+  width: 90px;
+  height: 90px;
+ }
+
+ .modal-title {
+  font-size: 1rem;
+  font-weight: 550;
+  margin: 15px 50px 0px 50px;
+  text-align: center;
+ }
+
+ .button-out {
+  margin-top: 80px;
+  width: 300px;
+  background-color: #F42427;
+  color: #ffffff;
+  border-radius: 8px;
+ }
+
+ .button-out:hover {
+  color: #ffffff;
+ }
+
+ .button-no {
+  margin-top: 15px;
+  width: 300px;
+  border: #000 solid 1px;
+  border-radius: 8px;
+ }
+
+
+ /* Loading */
+
+ .dialog-top {
+  max-width: 270px;
+  margin-top: 195px;
+ }
+
+ .content-top {
+  max-width: 270px;
+  width: 100%;
+ }
+
+ .modal-body {
+  padding-bottom: 30px;
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 30px 35px 10px 35px;
+ }
+
+ .spinner-border {
+  height: 70px;
+  width: 70px;
+  border: 8px solid #88AAFF;
+  border-top-color: #0B1A5C;
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation: spin 1.5s infinite linear;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* Memulai dari 0 derajat */
+  100% {
+    transform: rotate(360deg);
+  }
+
+  /* Berputar hingga 360 derajat */
+}
