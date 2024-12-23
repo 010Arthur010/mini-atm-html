@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Arahkan ke halaman selanjutnya setelah 2 detik
       setTimeout(function () {
-        window.location.href = './main-page/mainpage.html';
+        window.location.href = '../main-page/main-page.html';
       }, 2000);
     }
   });
