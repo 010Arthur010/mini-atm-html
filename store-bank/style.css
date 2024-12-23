@@ -1,0 +1,47 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #007bff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  border-bottom: #fff solid 1px;
+}
+
+.date {
+  color: #DEDEDE;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.icons-arrow {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.icons-money {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.btn button {
+  height: 50px;
+  padding: 10px 20px;
+  width: 180px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #0B1A5C;
+  border-radius: 12px;
+  border: none;
+}
