@@ -12,3 +12,8 @@ document.getElementById('myInput').addEventListener('click', displayNumber);
 function goNext() {
   window.location.href = './check-store/index.html';
 }
+
+// Link the function to the button
+document.getElementById('mainMenu').onclick = function () {
+  window.location.href = '/main-page/main-page.html';
+};
