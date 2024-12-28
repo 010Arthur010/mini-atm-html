@@ -37,7 +37,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  padding-left: 50px;
   border: none;
   text-decoration: none;
 }
@@ -210,22 +210,22 @@ img {
 
  /* Loading */
 
- .dialog-top {
-  max-width: 270px;
-  margin-top: 195px;
- }
+ .custom-loading-modal {
+  border-radius: 12px;
+  padding: 20px;
+  height: 276px;
+}
 
- .content-top {
-  max-width: 270px;
+.custom-dialog {
+  max-width: 300px;
   width: 100%;
- }
-
- .modal-body {
-  padding-bottom: 30px;
-  font-weight: bolder;
-  font-size: 18px;
-  padding: 30px 35px 10px 35px;
- }
+  margin-bottom: 20px;
+  position: fixed;
+  top: 29%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
 
  .spinner-border {
   height: 70px;
@@ -250,6 +250,4 @@ img {
   100% {
     transform: rotate(360deg);
   }
-
-  /* Berputar hingga 360 derajat */
 }
