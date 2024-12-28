@@ -29,7 +29,7 @@
         <label>Jumlah Nominal</label>
         <input type="text" id="bankAccount" placeholder="masukan nominal yang akan ditransfer" />
         <div class="btn-group">
-            <button class="button button-next" id="nextButton">
+            <button class="button button-next" id="nextButton" onclick="setModalData()">
                 Selanjutnya
             </button>
             <a href="../main-page/main-page.html">
@@ -49,24 +49,24 @@
             <div class="modal-body mb-2">
                 <form>
                     <div class="form-group">
-                        <label for="input1" class="small-label">No Rekening dan Kode Bank</label>
-                        <input type="text" class="form-control" id="input1" placeholder="Masukkan input pertama">
+                        <label for="inputPertama" class="small-label">No Rekening dan Kode Bank</label>
+                        <input type="text" class="form-control text-dark" id="input1" placeholder="Masukkan input pertama" disabled>
                     </div>
                     <div class="form-group">
-                        <label for="input2" class="small-label">Nama Penerima</label>
-                        <input type="text" class="form-control" id="input2" placeholder="Masukkan input kedua">
+                        <label for="inputKedua" class="small-label">Nama Penerima</label>
+                        <input type="text" class="form-control text-dark" id="input2" placeholder="Masukkan input kedua" disabled>
                     </div>
                     <div class="form-group">
-                        <label for="input3" class="small-label">Jumlah Nominal</label>
-                        <input type="text" class="form-control" id="input3" placeholder="Masukkan nominal">
+                        <label for="inputKetiga" class="small-label ">Jumlah Nominal</label>
+                        <input type="text" class="form-control text-dark" id="input3" placeholder="Masukkan nominal" disabled>
                     </div>
                 </form>
             </div>
             <div class="modal-footer d-flex justify-content-between">
-                <button type="button" class="btn custom-1" data-bs-dismiss="modal">
+                <button type="button" class="btn custom-1" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loadingModal" id="selesaiTransaksi">
                     Lanjut
                 </button>
-                <button type="button" class="btn custom-2">Kembali</button>
+                <button type="button" class="btn custom-2" data-bs-dismiss="modal">Kembali</button>
             </div>
         </div>
     </div>
@@ -88,6 +88,20 @@
             </div>
         </div>
     </div>
+</div>
+
+<!-- Modal Loading Block -->
+<div class="modal fade" id="loadingModal" tabindex="-1" aria-labelledby="loadingModalLabel" aria-hidden="true"
+data-bs-backdrop="static">
+<div class="modal-dialog custom-dialog">
+  <div class="modal-content custom-loading-modal">
+    <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+      <div class="spinner-border" role="status" id="customSpinner"></div>
+      <p class=" text-center fw-bold fs-5 mb-4">Tunggu transaksi
+        sedang di proses...</p>
+    </div>
+  </div>
+</div>
 </div>
 
 <script src="https://kit.fontawesome.com/50b778335c.js" crossorigin="anonymous"></script>

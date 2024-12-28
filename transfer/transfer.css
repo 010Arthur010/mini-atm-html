@@ -48,12 +48,14 @@
        margin-bottom: 10px;
        color: #ffffff; 
        font-size: 40px;
+       font-weight: 600;
      }
      
      .text2 {
        text-align: left;
        margin-bottom: 30px;
        font-size: 40px;
+       font-weight: 600;
      }
      
      .highlight {
@@ -65,7 +67,7 @@
      }
      
      main input {
-       width: 75%;
+       width: 50%;
        border: 1px solid #ccc;
        border-radius: 5px;
        margin-bottom: 170px;

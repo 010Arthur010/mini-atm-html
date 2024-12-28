@@ -1,6 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #007bff;
+  background-color: #0B88EF;
 }
 
 .header {
@@ -11,8 +11,8 @@ body {
 }
 
 .date {
-  font-size: 1.2rem;
   color: #DEDEDE;
+  font-size: 1.2rem;
   opacity: 55%;
 }
 
