@@ -32,7 +32,7 @@ body {
   left: 18%;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 32px;
   background: #fafafa;
 }
 
@@ -86,8 +86,6 @@ body {
 
 .row span {
   font-size: 1rem;
-  font-weight: 300;
-  color: #000;
 }
 
 .text-end {
@@ -111,7 +109,7 @@ body {
   justify-items: center;
 }
 
-.button-out {
+.btn-out {
   width: 200px;
   background-color: #737373;
   border-radius: 12px;
@@ -121,3 +119,56 @@ body {
 }
 
 /* End Content */
+
+/* Out Modal */
+.modal-dialog {
+  max-width: 350px;
+  margin: auto;
+  margin-top: 125px;
+}
+
+.modal-content {
+  border-radius: 25px;
+
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: none;
+}
+
+.icon-logout {
+  margin-top: 20px;
+  width: 90px;
+  height: 90px;
+}
+
+.modal-title {
+  font-size: 1rem;
+  font-weight: 550;
+  margin: 15px 50px 0px 50px;
+  text-align: center;
+}
+
+.button-out {
+  margin-top: 80px;
+  width: 300px;
+  background-color: #F42427;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.button-out:hover {
+  color: #ffffff;
+}
+
+.button-no {
+  margin-top: 15px;
+  width: 300px;
+  border: #000 solid 1px;
+  border-radius: 8px;
+}
+
+/* End Out Modal */

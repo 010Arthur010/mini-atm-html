@@ -25,20 +25,20 @@
         </div>
         <div class="text-box">
           <div class="row w-100">
-            <div class="col p-0 "><span>Nama</span></div>
-            <div class="col text-end pe-0 mb-3">AHMAD DENNY</div>
+            <div class="col p-0"><span>Nama</span></div>
+            <div class="col text-end pe-0 mb-2">AHMAD DENNY</div>
           </div>
           <div class="row w-100">
             <div class="col p-0"><span>No Rekening</span></div>
-            <div class="col text-end pe-0 mb-3">*************4567</div>
+            <div class="col text-end pe-0 mb-2">*************4567</div>
           </div>
           <div class="row w-100">
             <div class="col p-0"><span>bank Tujuan</span></div>
-            <div class="col text-end pe-0 mb-3">.</div>
+            <div class="col text-end pe-0 mb-2">.</div>
           </div>
           <div class="row w-100">
             <div class="col p-0"><span>Nominal</span></div>
-            <div class="col text-end pe-0 mb-3">500.000,00</div>
+            <div class="col text-end pe-0 mb-2">250.000,00</div>
           </div>
           <div class="row w-100">
             <div class="col p-0"><span>Waktu</span></div>
@@ -49,9 +49,27 @@
     </div>
     <div class="button-link d-flex justify-content-between w-25 mx-auto align-items-center">
       <a href="/main-page/main-page.html" class="btn button-in text-white">Lanjut Transaksi</a>
-      <a href="/welcome/index.html" class="btn button-out text-white">Keluar</a>
+      <button class="btn btn-out text-white" data-bs-toggle="modal" data-bs-target="#keluarBank">Keluar</button>
     </div>
   </div>
+
+  <div class="modal" tabindex="-1" id="keluarBank">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="/img/icons-logout.png" class="icon-logout">
+          <h5 class="modal-title">Apakah anda ingin keluar dari mini ATM?</h5>
+          <a href="/thank-you-page/thank-you.html">
+            <button type="button" class="btn button-out" data-bs-dismiss="modal">Keluar</button>
+          </a>
+          <a href="../transaksi-record/index.html">
+            <button type="button" class="btn button-no">Tidak</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>

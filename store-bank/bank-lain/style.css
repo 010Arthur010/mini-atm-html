@@ -3,6 +3,14 @@ body {
   background-color: #007bff;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 /* Navbar */
 
 .header {
@@ -25,7 +33,7 @@ body {
 
 /* End Navbar */
 
-
+/* Content */
 .content {
   padding: 20px 128px;
   margin-top: 150px;
@@ -79,14 +87,6 @@ body {
 
 .btn i {
   font-size: 24px;
-}
-
-.icon-container {
-  background-color: red;
-  padding: 10px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
 }
 
 .fa-solid {
@@ -185,3 +185,109 @@ body {
   border-radius: 8px;
   border: #000 solid 1px;
 }
+
+/* End Content */
+
+/* Error Modal */
+.dialong-custom {
+  max-width: 900px;
+  width: 100%;
+  position: fixed;
+  bottom: 50px;
+  left: 18%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.content-error {
+  border-radius: 18px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.header-error {
+  border-left: 14px solid #f00004;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom: none;
+  padding-left: 15px;
+}
+
+.modal-title-error {
+  color: #000;
+  font-weight: 400;
+}
+
+.icon-container-error {
+  background-color: #f00004;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-close {
+  opacity: 1.5;
+  font-size: 16px;
+  position: absolute;
+  right: 30px;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* End Error Modal */
+
+
+/* Info Modal */
+
+.dialong-custom {
+  max-width: 900px;
+  width: 100%;
+  position: fixed;
+  bottom: 50px;
+  left: 18%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.info-content {
+  border-radius: 18px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.info-header {
+  border-left: 14px solid #06bce5;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom: none;
+  padding-left: 15px;
+}
+
+.modal-info-title {
+  color: #000;
+  font-weight: 400;
+}
+
+.icon-container-info {
+  background-color: #06bce5;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-close {
+  opacity: 1.5;
+  font-size: 16px;
+  position: absolute;
+  right: 30px;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* End Info Modal */

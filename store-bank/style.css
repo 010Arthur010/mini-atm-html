@@ -44,3 +44,16 @@ body {
   border-radius: 12px;
   border: none;
 }
+
+.img-fluid {
+  width: 120px;
+}
+
+.icons-money h2 {
+  width: 500px;
+  font-size: 40px;
+}
+
+.text-white {
+  font-size: 20px;
+}
