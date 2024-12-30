@@ -131,13 +131,15 @@ body {
 .custom-loading-modal {
   border-radius: 12px;
   padding: 20px;
+  height: 276px;
 }
 
 .custom-dialog {
   max-width: 300px;
   width: 100%;
+  margin-bottom: 20px;
   position: fixed;
-  top: 35%;
+  top: 29%;
   left: 38%;
   transform: translate(-50%, -50%);
   margin: 0;
