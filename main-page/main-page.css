@@ -4,7 +4,8 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: "Poppins", sans-serif; /* Use Poppins font */
+  font-family: "Poppins", sans-serif;
+  /* Use Poppins font */
   background-color: #0B88EF;
 }
 
@@ -78,8 +79,10 @@ span {
 }
 
 .action {
-  width: 40px; /* Ubah sesuai kebutuhan */
-  height: auto; /* Menjaga rasio aspek */
+  width: 40px;
+  /* Ubah sesuai kebutuhan */
+  height: auto;
+  /* Menjaga rasio aspek */
   margin-right: 10px;
 }
 
@@ -95,38 +98,53 @@ span {
 }
 
 .action-button:hover .icon-eye {
-  width: 40px; /* Ubah sesuai kebutuhan */
-  height: auto; /* Menjaga rasio aspek */
+  width: 40px;
+  /* Ubah sesuai kebutuhan */
+  height: auto;
+  /* Menjaga rasio aspek */
   margin-right: 10px;
-  content: url('../img/eye-2.png'); /* Gambar baru */
+  content: url('../img/eye-2.png');
+  /* Gambar baru */
 }
 
 .action-button:hover .icon-trans {
-  width: 40px; /* Ubah sesuai kebutuhan */
-  height: auto; /* Menjaga rasio aspek */
+  width: 40px;
+  /* Ubah sesuai kebutuhan */
+  height: auto;
+  /* Menjaga rasio aspek */
   margin-right: 10px;
-  content: url('../img/trans-2.png'); /* Gambar baru */
+  content: url('../img/trans-2.png');
+  /* Gambar baru */
 }
 
 .action-button:hover .icon-money {
-  width: 40px; /* Ubah sesuai kebutuhan */
-  height: auto; /* Menjaga rasio aspek */
+  width: 40px;
+  /* Ubah sesuai kebutuhan */
+  height: auto;
+  /* Menjaga rasio aspek */
   margin-right: 10px;
-  content: url('../img/money-2.png'); /* Gambar baru */
+  content: url('../img/money-2.png');
+  /* Gambar baru */
 }
 
 .action-button:hover .icon-tarik {
-  width: 40px; /* Ubah sesuai kebutuhan */
-  height: auto; /* Menjaga rasio aspek */
+  width: 40px;
+  /* Ubah sesuai kebutuhan */
+  height: auto;
+  /* Menjaga rasio aspek */
   margin-right: 10px;
-  content: url('../img/tarik-2.png'); /* Gambar baru */
+  content: url('../img/tarik-2.png');
+  /* Gambar baru */
 }
 
 .action-button:hover .icon-keluar {
-  width: 40px; /* Ubah sesuai kebutuhan */
-  height: auto; /* Menjaga rasio aspek */
+  width: 40px;
+  /* Ubah sesuai kebutuhan */
+  height: auto;
+  /* Menjaga rasio aspek */
   margin-right: 10px;
-  content: url('../img/keluar-2.png'); /* Gambar baru */
+  content: url('../img/keluar-2.png');
+  /* Gambar baru */
 }
 
 .button {
@@ -166,51 +184,53 @@ img {
 }
 
 .modal-content {
- border-radius: 25px;
+  border-radius: 25px;
 
 }
+
 .modal-header {
- display: flex;
- flex-direction: column;
- align-items: center;
- border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: none;
 }
- .icon-logout {
+
+.icon-logout {
   margin-top: 20px;
   width: 90px;
   height: 90px;
- }
+}
 
- .modal-title {
+.modal-title {
   font-size: 1rem;
   font-weight: 550;
   margin: 15px 50px 0px 50px;
   text-align: center;
- }
+}
 
- .button-out {
+.button-out {
   margin-top: 80px;
   width: 300px;
   background-color: #F42427;
   color: #ffffff;
   border-radius: 8px;
- }
+}
 
- .button-out:hover {
+.button-out:hover {
   color: #ffffff;
- }
+}
 
- .button-no {
+.button-no {
   margin-top: 15px;
   width: 300px;
   border: #000 solid 1px;
   border-radius: 8px;
- }
+}
 
 
- /* Loading */
+/* Loading */
 
- .custom-loading-modal {
+.custom-loading-modal {
   border-radius: 12px;
   padding: 20px;
   height: 276px;
@@ -227,7 +247,7 @@ img {
   margin: 0;
 }
 
- .spinner-border {
+.spinner-border {
   height: 70px;
   width: 70px;
   border: 8px solid #88AAFF;
