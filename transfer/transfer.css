@@ -40,7 +40,7 @@
        padding: 100px;
        border-radius: 8px;
        margin-left: 30px;
-       margin-top: 50px;
+       margin-top: 70px;
      }
      
      .text1 {
@@ -184,6 +184,53 @@
       background-color: transparent;
       border: 1px solid #000000;
      }
+
+      /* Alert Info */
+
+ .header-info {
+  border-left: 15px solid #06BCE5; /* Border kiri */
+  border-radius: 12px;
+}
+
+.content-info {
+  padding: 0px;
+}
+
+.icon-info {
+  background-color: #06BCE5;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+.color-info {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.dialog-info {
+  margin: 500px auto 0px auto; /* Atas, Kanan, Bawah, Kiri */
+  max-width: 900px;
+}
+
+.title-info {
+  font-size: 20px;
+}
+
+.modal-info {
+  font-size: 14px;
+}
+
+.header-info .btn-close {
+  margin-right: 10px;
+}
+
+.modal-info { 
+  margin: 0; /* Menghilangkan margin default untuk p */
+  color: #000000; /* Warna abu-abu untuk deskripsi */
+}
 
 
      

@@ -18,16 +18,18 @@
         <div class="bank-name">(NAMA BANK)</div>
         <div class="date">Rabu 23 Oktober</div>
     </nav>
-    <a href="../transfer/transfer.html">
-        <i class="icon-arrow fa-solid fa-arrow-left"></i>
-    </a>
+    <div class="link-icon">
+        <a href="../transfer/transfer.html">
+            <i class="icon-arrow fa-solid fa-arrow-left fs-3"></i>
+        </a>
+    </div>
     <main class="container">
         <h2 class="text1">Pastikan memasukkan nominal dengan</h2>
         <h2 class="text2">
             <span class="highlight">benar</span> !!
         </h2>
         <label>Jumlah Nominal</label>
-        <input type="text" id="bankAccount" placeholder="masukan nominal yang akan ditransfer" />
+        <input type="text" id="bankAccount" placeholder="Masukkan nominal yang akan ditransfer" />
         <div class="btn-group">
             <button class="button button-next" id="nextButton" onclick="setModalData()">
                 Selanjutnya
@@ -57,8 +59,8 @@
                         <input type="text" class="form-control text-dark" id="input2" placeholder="Masukkan input kedua" disabled>
                     </div>
                     <div class="form-group">
-                        <label for="inputKetiga" class="small-label ">Jumlah Nominal</label>
-                        <input type="text" class="form-control text-dark" id="input3" placeholder="Masukkan nominal" disabled>
+                        <label for="inputKetiga" class="small-label">Jumlah Nominal</label>
+                        <input type="text" class="form-control text-dark" id="input3" placeholder="Masukkan nominal" disabled >
                     </div>
                 </form>
             </div>
@@ -82,7 +84,25 @@
                 </div>
                 <div class="ms-3">
                     <h5 class="modal-title title-alert">Error</h5>
-                    <p class="modal-desk">Silahkan masukkan kode bank dan no rekening</p>
+                    <p class="modal-desk">Silahkan masukkan nominal dahulu</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Alert Info -->
+<div class="modal" tabindex="-1" id="infoModal">
+    <div class="modal-dialog dialog-info">
+        <div class="modal-content content-info">
+            <div class="modal-header header-info">
+                <div class="icon-info d-flex justify-content-center">
+                    <i class="fa-solid fa-circle-exclamation color-info"></i>
+                </div>
+                <div class="ms-3">
+                    <h5 class="modal-title title-info">Info</h5>
+                    <p class="modal-info">Saldo tidak cukup</p>
                 </div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>

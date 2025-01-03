@@ -8,6 +8,9 @@
 .icon-arrow {
   color: #ffffff;
   font-size: 25px;
+}
+
+.link-icon {
   margin: 0px 0px 420px 50px;
 }
 
@@ -46,7 +49,7 @@
   padding: 40px;
   border-radius: 8px;
   margin-left: 18px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .text1 {
@@ -189,6 +192,16 @@ main input {
   border: 1px solid #000000;
  }
 
+
+ .currency-label {
+  position: absolute;
+  left: 140px; /* Adjust this value as needed */
+  top: 50%;
+  transform: translateY(-100%);
+  pointer-events: none; /* Prevents clicking on the label */
+  color: #000000; /* Bootstrap's secondary text color */
+}
+
  /* Alert Error */
 
  .header-alert {
@@ -233,7 +246,54 @@ main input {
 
 .modal-desk { 
   margin: 0; /* Menghilangkan margin default untuk p */
-  color: #6c757d; /* Warna abu-abu untuk deskripsi */
+  color: #000000; /* Warna abu-abu untuk deskripsi */
+}
+
+ /* Alert Info */
+
+ .header-info {
+  border-left: 15px solid #06BCE5; /* Border kiri */
+  border-radius: 12px;
+}
+
+.content-info {
+  padding: 0px;
+}
+
+.icon-info {
+  background-color: #06BCE5;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+.color-info {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.dialog-info {
+  margin: 500px auto 0px auto; /* Atas, Kanan, Bawah, Kiri */
+  max-width: 900px;
+}
+
+.title-info {
+  font-size: 20px;
+}
+
+.modal-info {
+  font-size: 14px;
+}
+
+.header-info .btn-close {
+  margin-right: 10px;
+}
+
+.modal-info { 
+  margin: 0; /* Menghilangkan margin default untuk p */
+  color: #000000; /* Warna abu-abu untuk deskripsi */
 }
 
 /* Loading */

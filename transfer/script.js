@@ -1,3 +1,8 @@
+window.onload = function() {
+  const infoModalBank = new bootstrap.Modal(document.getElementById('infoModal'));
+  infoModalBank.show();
+};
+
 const input = document.getElementById("inputNumber");
 
 input.addEventListener("input", function () {

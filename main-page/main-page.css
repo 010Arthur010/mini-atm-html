@@ -18,6 +18,11 @@ html {
   margin-bottom: 55px;
 }
 
+.container {
+  margin-left: 116px;
+  margin-right: 116px;
+}
+
 .navbar-brand {
   font-size: 1.2rem;
   color: #000;
