@@ -1,0 +1,338 @@
+body {
+  font-family: 'poppins', sans-serif;
+  background: #0B88EF;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+/* Navbar */
+.container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  border-bottom: #fff solid 1px;
+  margin-bottom: 55px;
+  padding: 16px 128px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: #DEDEDE;
+  opacity: 55%;
+}
+
+/* End Navbar */
+
+/* Content */
+.input-area {
+  padding-left: 128px;
+  margin-top: 6rem;
+}
+
+.custom-input {
+  width: 416px;
+  border-radius: 12px;
+}
+
+.input-area ::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(11, 26, 92, 0.45);
+}
+
+.btn-custom {
+  width: 200px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: #fff;
+  color: #000;
+  /* Warna teks default */
+  border: 0;
+  padding: 1rem;
+  /* Padding untuk tampilan yang lebih baik */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Transisi untuk background dan warna teks */
+}
+
+.btn-custom:hover {
+  background-color: #92ACEF;
+  /* Warna latar belakang saat hover */
+  color: white;
+  /* Warna teks saat hover */
+}
+
+.active {
+  background-color: #92ACEF;
+  /* Warna latar belakang saat aktif */
+  color: white;
+  /* Warna teks saat aktif */
+}
+
+.button-row {
+  padding-left: 128px;
+}
+
+.button {
+  width: 66%;
+}
+
+.btn-menu {
+  margin-top: 76px;
+}
+
+.btn-in {
+  background-color: #16D455;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  width: 200px;
+}
+
+.btn-out {
+  background-color: #737373;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  width: 200px;
+}
+
+/* End Content */
+
+/* Modal Option */
+
+.option-content {
+  border-radius: 25px;
+  width: 620px;
+}
+
+.option-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+small {
+  font-size: 0.7rem;
+  color: #989898;
+}
+
+.btn-continue {
+  width: 170px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #0b1a5c;
+  color: #fff;
+  padding: 0.2rem;
+}
+
+.btn-return {
+  width: 170px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #fff;
+  color: #000;
+  padding: 0.2rem;
+  border: 1px solid #000;
+}
+
+.form-check {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  border-radius: 45px;
+  width: 340px;
+  height: 40px;
+}
+
+.check-input {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.check-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* End Modal Option */
+
+/* Info Modal */
+#infoModal .modal-dialog {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-86%);
+  margin: 0;
+}
+
+#infoModal .modal-content {
+  border-radius: 12px;
+  width: 900px;
+  border-left: 15px solid #06BCE5;
+}
+
+#infoModal .modal-body {
+  display: flex;
+  align-items: center;
+}
+
+#infoModal .info-content-wrapper {
+  flex-grow: 1;
+}
+
+#infoModal .info-title {
+  margin: 0;
+}
+
+#infoModal .info-text {
+  margin: 0;
+}
+
+#infoModal .template-image {
+  width: 25px;
+  height: 25px;
+}
+
+#infoModal .img-icons {
+  width: 36px;
+  height: 36px;
+  background-color: #06BCE5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+#infoModal .info-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* End Info Modal */
+
+/* Atm Modal */
+
+#atmModal .modal-dialog {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-86%);
+  margin: 0;
+}
+
+#atmModal .modal-content {
+  border-radius: 12px;
+  width: 900px;
+  border-left: 15px solid #06BCE5;
+}
+
+#atmModal .modal-body {
+  display: flex;
+  align-items: center;
+}
+
+#atmModal .info-content-wrapper {
+  flex-grow: 1;
+}
+
+#atmModal .info-title {
+  margin: 0;
+}
+
+#atmModal .info-text {
+  margin: 0;
+}
+
+#atmModal .template-image {
+  width: 25px;
+  height: 25px;
+}
+
+#atmModal .img-icons {
+  width: 36px;
+  height: 36px;
+  background-color: #06BCE5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+#atmModal .info-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* End Atm Modal */
+
+/* Pecahan Modal */
+
+#pecahanModal .modal-dialog {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-86%);
+  margin: 0;
+}
+
+#pecahanModal .modal-content {
+  border-radius: 12px;
+  width: 900px;
+  border-left: 15px solid #06BCE5;
+}
+
+#pecahanModal .modal-body {
+  display: flex;
+  align-items: center;
+}
+
+#pecahanModal .info-content-wrapper {
+  flex-grow: 1;
+}
+
+#pecahanModal .info-title {
+  margin: 0;
+}
+
+#pecahanModal .info-text {
+  margin: 0;
+}
+
+#pecahanModal .template-image {
+  width: 25px;
+  height: 25px;
+}
+
+#pecahanModal .img-icons {
+  width: 36px;
+  height: 36px;
+  background-color: #06BCE5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+#pecahanModal .info-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* End Pecahan Modal */
