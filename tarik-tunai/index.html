@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Tarik Tunai</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="navbar">
+      <div class="name">(NAMA BANK)</div>
+      <div class="date">Rabu 23 Oktober</div>
+    </div>
+    <div class="content">
+      <div class="input-area">
+        <input type="number" class="form-control custom-input p-4" maxlength="6" placeholder="Masukkan jumlah lainnya"
+          id="myInput">
+        <small class="form-text text-light">minmal transaksi 50.000</small>
+      </div>
+      <div class="button mt-4">
+        <div class="button-row">
+          <button class="btn-custom border-0 p-4 mb-3" value="50000">Rp 50.000</button>
+          <button class="btn-custom border-0 p-4 mb-3 mx-2" value="500000">Rp 500.000</button>
+        </div>
+
+        <div class="button-row">
+          <button class="btn-custom border-0 p-4" value="200000">Rp 200.000</button>
+          <button class="btn-custom border-0 p-4 mx-2" value="1000000">Rp 1.000.000</button>
+        </div>
+
+        <div class="button-row btn-menu">
+          <button class="btn-in border-0 p-3 text-white">Tarik Tunai</button>
+          <button class="btn-out border-0 p-3 mx-2 text-white" id="mainMenu">Menu Lainnya</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="optionModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="optionModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content option-content">
+        <div class="modal-header border-0 d-flex flex-column">
+          <h5 class="modal-title option-title">Pilih Pecahan</h5>
+          <small>pilih salah satu di bawah ini</small>
+        </div>
+        <div class="modal-body w-75 d-flex flex-column mx-auto">
+          <div class="form-check p-2">
+            <input class="check-input" type="radio" name="amount" id="amount1" value="50000">
+            <label class="check-label fw-normal mx-2" for="amount1">Rp 50.000</label>
+          </div>
+          <div class="form-check p-2 mt-3 mb-4">
+            <input class="check-input" type="radio" name="amount" id="amount2" value="100000">
+            <label class="check-label fw-normal mx-2" for="amount2">Rp 100.000</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn-continue border-0" id="btnContinue">Lanjut</button>
+          <button type="button" class="btn-return" data-bs-dismiss="modal">kembali</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info Modal -->
+  <div class="modal fade" id="infoModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="infoModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content info-content">
+        <div class="modal-body d-flex align-items-center">
+          <div class="img-icons">
+            <img src="../img/icons-info.png" alt="Template Image" class="template-image">
+          </div>
+          <div class="info-content-wrapper flex-grow-1 mx-2">
+            <h5 class="info-title fw-bold">Info</h5>
+            <p class="info-text">Saldo akun tidak mencukupi</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATM Modal -->
+  <div class="modal fade" id="atmModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="atmModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content info-content">
+        <div class="modal-body d-flex align-items-center">
+          <div class="img-icons">
+            <img src="../img/icons-info.png" alt="Template Image" class="template-image">
+          </div>
+          <div class="info-content-wrapper flex-grow-1 mx-2">
+            <h5 class="info-title fw-bold">Info</h5>
+            <p class="info-text">Saldo ATM tidak mencukupi</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pecahan Modal -->
+  <div class="modal fade" id="pecahanModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="atmModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content info-content">
+        <div class="modal-body d-flex align-items-center">
+          <div class="img-icons">
+            <img src="../img/icons-info.png" alt="Template Image" class="template-image">
+          </div>
+          <div class="info-content-wrapper flex-grow-1 mx-2">
+            <h5 class="info-title fw-bold">Info</h5>
+            <p class="info-text">Pecahan tidak tersedia</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/50b778335c.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
