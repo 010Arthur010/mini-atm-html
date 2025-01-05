@@ -122,7 +122,7 @@ body {
   justify-items: center;
 }
 
-.button-out {
+.button-keluar {
   width: 200px;
   background-color: #737373;
   border-radius: 12px;
@@ -130,5 +130,57 @@ body {
   font-weight: 500;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
+/* Popup Keluar */
+
+.modal-dialog {
+  max-width: 350px;
+  margin: auto;
+  margin-top: 125px;
+}
+
+.modal-content {
+ border-radius: 25px;
+
+}
+.modal-header {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ border-bottom: none;
+}
+ .icon-logout {
+  margin-top: 20px;
+  width: 90px;
+  height: 90px;
+ }
+
+ .modal-title {
+  font-size: 1rem;
+  font-weight: 550;
+  margin: 15px 50px 0px 50px;
+  text-align: center;
+ }
+
+ .button-out {
+  margin-top: 80px;
+  width: 300px;
+  background-color: #F42427;
+  color: #ffffff;
+  border-radius: 8px;
+ }
+
+ .button-out:hover {
+  color: #ffffff;
+ }
+
+ .button-no {
+  margin-top: 15px;
+  width: 300px;
+  border: #000 solid 1px;
+  border-radius: 8px;
+ }
+
+ 
 
 /* End Content */

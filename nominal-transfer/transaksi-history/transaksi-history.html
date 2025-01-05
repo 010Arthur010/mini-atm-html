@@ -59,7 +59,23 @@
     </div>
     <div class="button-link d-flex justify-content-between w-25 mx-auto align-items-center">
       <a href="/main-page/main-page.html" class="btn button-in text-white">Lanjut Transaksi</a>
-      <a href="/welcome/index.html" class="btn button-out text-white">Keluar</a>
+      <button type="button" class="btn button-keluar text-white" data-bs-toggle="modal" data-bs-target="#keluarBank">Keluar</button>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" id="keluarBank">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="../../img/icons-logout.png" class="icon-logout">
+          <h5 class="modal-title">Apakah anda ingin keluar dari mini ATM?</h5>
+          <a href="/thank-you-page/thank-you.html">
+            <button type="button" class="btn button-out" data-bs-toggle="modal"
+              data-bs-target="#loadingModal">Keluar</button>
+          </a>
+          <button type="button" class="btn button-no">Tidak</button>
+        </div>
+      </div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
