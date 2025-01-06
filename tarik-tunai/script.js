@@ -135,3 +135,50 @@ function showOptionModal() {
 
 // Call function to set up event listener
 handleOptionModal();
+
+
+// Function to handle option modal
+function handleOptionModal() {
+  const btnContinue = document.getElementById('btnContinue');
+
+  if (btnContinue) {
+    btnContinue.addEventListener('click', function () {
+      const selectedAmountOption = document.querySelector('input[name="amount"]:checked');
+
+      if (selectedAmountOption) {
+        const amount = selectedAmountOption.value;
+        localStorage.setItem('selectedAmount', amount);
+
+        const modalInstance = bootstrap.Modal.getInstance(optionModal);
+        if (modalInstance) {
+          modalInstance.hide();
+        }
+
+        if (selectedAmount === 10000) {
+          showPecahanModal(); // Tampilkan pecahan modal
+        } else {
+          showLoadingModal(); // Show loading modal
+          setTimeout(() => {
+            window.location.href = './cek-struk/index.html'; // Redirect to another page
+          }, 2000); // Adjust the delay as needed (2000 ms = 2 seconds)
+        }
+        console.log('Pecahan yang dipilih:', amount);
+      } else {
+        showPecahanModal(); // Tampilkan pecahan modal jika tidak ada opsi yang dipilih
+      }
+    });
+  } else {
+    console.error('Button "btnContinue" not found');
+  }
+}
+
+// Function to show loading modal
+function showLoadingModal() {
+  // Close any other modals first
+  infoModal.hide();
+  atmModal.hide();
+  pecahanModal.hide();
+  optionModal.hide();
+  const loadingModal = new bootstrap.Modal(document.getElementById('loadingModal'));
+  loadingModal.show();
+}

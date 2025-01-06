@@ -336,3 +336,53 @@ small {
 }
 
 /* End Pecahan Modal */
+
+/* Modal Loading */
+#loadingModal .modal-content {
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.custom-loading-modal {
+  border-radius: 12px;
+}
+
+.custom-dialog {
+  max-width: 300px;
+  width: 100%;
+  position: fixed;
+  top: 35%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+
+.spinner-border {
+  height: 70px;
+  width: 70px;
+  border: 8px solid #88AAFF;
+  border-top-color: #0B1A5C;
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation: spin 1.5s infinite linear;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* Memulai dari 0 derajat */
+  100% {
+    transform: rotate(360deg);
+  }
+
+  /* Berputar hingga 360 derajat */
+}
+
+/* End Modal Loading */
