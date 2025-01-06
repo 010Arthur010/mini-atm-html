@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Cek Struk</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="navbar">
+      <div class="name">(NAMA BANK)</div>
+      <div class="date">Rabu 23 Oktober</div>
+    </div>
+    <div class="content">
+      <div class="img-icons">
+        <img src="/img/img-atm.png" alt="Logo Bank">
+        <span class="subjudul">silakan ambil uang anda</span>
+        <div class="button">
+          <a href="../transaksi-record/index.html" class="btn text-decoration-none p-0">
+            <button class="button-in border-0">Cek Struk</button>
+          </a>
+          <button class="button-in border-0" data-bs-toggle="modal" data-bs-target="#keluarBank">Keluar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Keluar -->
+  <div class="modal" tabindex="-1" id="keluarBank">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="/img/icons-logout.png" class="icon-logout">
+          <h5 class="modal-title">Apakah anda ingin keluar dari mini ATM?</h5>
+          <a href="/thank-you-page/thank-you.html" class="link-out">
+            <button type="button" class="btn button-out" data-bs-dismiss="modal">Keluar</button>
+          </a>
+          <button type="button" class="btn button-no" data-bs-dismiss="modal">Tidak</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

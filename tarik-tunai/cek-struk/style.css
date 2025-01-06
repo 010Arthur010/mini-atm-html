@@ -1,0 +1,123 @@
+body {
+  font-family: 'poppins', sans-serif;
+  background: #0B88EF;
+}
+
+/* Navbar */
+.container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  border-bottom: #fff solid 1px;
+  margin-bottom: 55px;
+  padding: 16px 128px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: #DEDEDE;
+  opacity: 55%;
+}
+
+/* End Navbar */
+
+/* content */
+
+.img-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  margin: 0;
+}
+
+.subjudul {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+a {
+  width: 160px;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.button-in {
+  width: 140px;
+  height: 40px;
+  background-color: #0b1a5c;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* End content */
+
+/* Out Modal */
+.modal-dialog {
+  max-width: 350px;
+  margin: auto;
+  margin-top: 125px;
+}
+
+.modal-content {
+  border-radius: 25px;
+
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: none;
+}
+
+.icon-logout {
+  margin-top: 20px;
+  width: 90px;
+  height: 90px;
+}
+
+.modal-title {
+  font-size: 1rem;
+  font-weight: 550;
+  margin: 15px 50px 0px 50px;
+  text-align: center;
+}
+
+.button-out {
+  margin-top: 80px;
+  width: 300px;
+  background-color: #F42427;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.button-out:hover {
+  color: #ffffff;
+}
+
+.button-no {
+  margin-top: 15px;
+  width: 300px;
+  border: #000 solid 1px;
+  border-radius: 8px;
+}
+
+.link-out {
+  width: 300px;
+}
+
+/* End Out Modal */
