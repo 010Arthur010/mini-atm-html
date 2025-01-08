@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const pinInput = document.querySelector('input[type="text"]');
+  const pinInput = document.querySelector('input[type="password"]');
   const clearButton = document.querySelector('.btn-warning');
   const cancelButton = document.querySelector('#cancelButton');
   const enterButton = document.querySelector('.btn-success');
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   pinInput.parentNode.insertBefore(errorMessage, pinInput.nextSibling); // Menempatkan pesan di bawah input
 
   let attemptsLeft = 2; // Jumlah percobaan yang tersisa
-  const correctPin = '2'; // Ganti dengan PIN yang benar
+  const correctPin = '123456'; // Ganti dengan PIN yang benar
   // const displayPin = correctPin; // Menyimpan nilai PIN untuk ditampilkan
 
   clearButton.addEventListener('click', function () {
@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const value = pinInput.value;
     // Simpan nilai asli di variabel terpisah
     pinInput.setAttribute('data-value', value); // Simpan nilai asli
-    pinInput.value = '*'.repeat(value.length); // Tampilkan bintang
   });
 
   enterButton.addEventListener('click', function () {
